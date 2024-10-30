@@ -26,6 +26,10 @@
 {% include_relative 03_whisper/README.md %}
 
 ## Lekce 04: Open AI client
+<https://platform.openai.com/docs/quickstart?language-preference=python>
 
 ## Lekce 05: Embeddings
 <https://platform.openai.com/docs/api-reference/embeddings>
+
+## Lekce 06: Chroma
+<https://github.com/chroma-core/chroma>
