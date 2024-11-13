@@ -10,5 +10,9 @@ messages = [
         content="""Please can you provide a funny joke about software engineers?"""
     ),
 ]
+
+# for chunk in chat.stream(messages):
+#     print(chunk.content, end="", flush=True)
+
 response = chat.invoke(input=messages)
 print(response.content)
