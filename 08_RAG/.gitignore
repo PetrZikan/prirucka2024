@@ -1,0 +1,5 @@
+*.pkl
+*.html
+*.txt
+chroma_db_langchain/
+downloaded_content/

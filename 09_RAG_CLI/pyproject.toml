@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "prirucka2024"
+version = "0.1.0"
+description = ""
+authors = ["Petr Zikán <zikan.p@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prirucka2024", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+rich = "^13.9.4"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+prirucka2024 = "prirucka2024.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
