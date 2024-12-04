@@ -1,3 +1,5 @@
 .vscode/
 91_rst/
-prirucka2024/
+09_RAG_CLI/dist/
+__pycache__
+chroma_db/
