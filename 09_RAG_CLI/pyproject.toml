@@ -11,9 +11,18 @@ python = "^3.10"
 click = "^8.1.7"
 rich = "^13.9.4"
 requests = "^2.32.3"
+langchain = "^0.3.9"
+langchain-cli = "^0.0.33"
+lxml = "^5.3.0"
+beautifulsoup4 = "^4.12.3"
+langchain-chroma = "^0.1.4"
+langchain-openai = "^0.2.11"
 
 [tool.poetry.scripts]
 prirucka2024 = "prirucka2024.__main__:main"
+
+[tool.poetry.group.devel.dependencies]
+pytest = "^8.3.4"
 
 [build-system]
 requires = ["poetry-core"]
