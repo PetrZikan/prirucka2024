@@ -5,6 +5,9 @@ from prirucka2024.rag import prompt, retrieve
 from prirucka2024.split_html_on_headers import split_html as split_html_func
 from prirucka2024.fill_vector_store import fill_vector_store as fill_vector_store_func
 from prirucka2024.pdf_parser_raw import parse_pdf_raw as parse_pdf_raw_func
+from prirucka2024.split_text_recursively import (
+    split_text_recursively as split_text_recursively_func,
+)
 
 # from prirucka2024.pdf_parser import parse_pdf as parse_pdf_func
 
@@ -116,6 +119,19 @@ def parse_pdf_raw(infile, outfile):
     """Force-parse the text content of a PDF file and save it to a text file."""
 
     parse_pdf_raw_func(infile, outfile)
+
+
+@main.command()
+@click.argument("infile")
+@click.argument("outfile")
+@click.option(
+    "--chunk-size", default=200, help="Size of the chunks to split the text into."
+)
+@click.option("--chunk-overlap", default=50, help="Size of the overlap between chunks.")
+def split_text_recursively(infile, outfile, chunk_size, chunk_overlap):
+    """Force-parse the text content of a PDF file and save it to a text file."""
+
+    documents = split_text_recursively_func(infile, outfile, chunk_size, chunk_overlap)
 
 
 # @main.command()
