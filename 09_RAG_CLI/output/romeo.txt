@@ -1,0 +1,373 @@
+kniha:
+https://search.mlp.cz/cz/titul/romeo-a-julie/3542771/#/dk=key-eq:3545271-amp:titul-eq:true&getPodobneTituly=deskriptory-eq:97604239-amp:key-eq:3542771
+
+Použití:
+python -m prirucka2024 split-html-on-headers romeo_a_julie.html --output-pkl romeo_a_julie.pkl --output-txt romeo_a_julie.txt --drop-empty-metadata
+python -m prirucka2024 fill-vector-store romeo_a_julie.pkl romeo_a_julie_chroma
+python -m prirucka2024 rag --chroma-db-dir romeo_a_julie_chroma/ "Kdo je Tybalt?"
+
+Retrieved Documents:
+Metadata: {'Header 2': 'Scena 1.'}
+Content: Náměstí. Vystoupí Mercutio , Benvolio , Panoš a Sloužící . Ben. Pojď domů, prosím tě, Mercutio, jest horký den a Capuleti
+venku; když potkáme je, šrůtce
+neujdem, neb v těchto parných dnech krev
+zbujná vře. Mer. Ty’s mi také jeden z těch ptáčků, kteří, jakmile
+zavadí o krčmu, praští mečem o stůl a vzkřiknou: »Dej Bůh, abych tě nepotřeboval!
+« a jak jim jedna neb dvě sklenice vstoupí do hlavy, tasí na krčmáře, kde toho
+věru nebylo potřebí. Ben. Já že jsem takový ptáček? Mer. Ticho, ticho; jsi na vlas takový horkokrevný
+Janek, jako kterýkoli v Itálii; tak popudlivý k prudkosti jako prudký k
+popudlivosti. Ben. A co dál? Mer. Ano, kdybyste byli takoví dva, neměli bychom
+brzo žádného, protože by jeden druhému zakroutil krk. Ty! – aj, pustíš se do
+člověka, který má o chlup více, neb o chlup méně na bradě, než ty; ty se pustíš
+do člověka, jenž louská ořechy, bez jiné příčiny kromě té, že máš oči barvy
+lískové. Které oko, než takové, by si vyslídilo takový svár? Tvá hlava jest tak
+plna svárů, jako vejce plno žloutku a bílku, a přec ti už hlavu jako vejce na
+žmach potloukli pro samou svárlivost. Ty’s vyjel si na člověka, jenž na ulici
+zakašlal, protože ti zbudil psa ležícího na slunci. Nevypeskoval´s krejčího,
+protože si oblékl nový kabát před velkonoci? a jiného, protože si uvázal nové
+střevíce starou tkanicí? A ty mne budeš kantorovat, abych se uchránil svárů! Ben. Kdybych byl já tak svárliv jako ty, nikdo by
+nepobloudil, kdo by si vzal pojistku na můj život na pět čtvrtí hodiny. Mer. Nepobloudil; – bloudku! Vystoupí Tybalt a jiní . Ben. Mou hlavu na to, tu jdou Capuleti. Mer. Mou patu na to, mně to lhostejno. Tyb. Jen těsně za mnou; promluvím si s nimi. Dobrý
+den, páni! na slovo z vás jeden. Mer. Z nás jeden, a jen na slovo? Něco k tomu
+přidejte; ať je to slovo a rána. Tyb. I k tomu najdete mne hotova, pane, dáte-li mi
+příčinu. Mer. Nemohl byste si‘ nějakou příčinu vzít, aniž
+bychom ji dali? Tyb. Mercutio, ty a Romeo spolu hrajete – Mer. Hrajem? jak, děláš ty z nás muzikanty? A
+děláš-li z nás muzikanty, hled, abys neuslyšel zaskřípání! Zde můj šmytec; ten
+vás tančit naučí. U všech ďáblů, – hrajem! Ben. Jsme na veřejné, živé ulici; buď uchylte se někam v ústraní, neb o svém sporu chladně
+promluvte, neb každý po svých rozejděte
+se. Zde oči všech se na vás dívají. Mer. Má každý oči, aby díval se; jen ať se dívají. Já
+nehnu se, ať komu líbí se, či nelíbí. Vystoupí Romeo. Tyb. Mír s vámi, pane; tady jest můj člověk. Mer. Ať visím, jestli vaši livrej má. Jen napřed, pane, na soubojiště! však půjde za vámi; v tom smyslu
+může jej vaše Milost zvát svým
+člověkem. Tyb. Romeo, láska, kterou k tobě mám, mi lepšího dát nemůž‘ výrazu než toho, že jsi padouch. Rom. Tybalte, ta příčina, jíž mám tě milovat, až příliš krotí hněv, jenž slušel
+by na taký pozdrav. – Nejsem
+padouchem; a tedy s bohem! Vidím, že mne
+neznáš. Tyb. Tím, chlapče, neomluvíš urážky mně učiněné; protož stůj a tas. Rom. Bůh svědkem, nikdy jsem ti neublížil; však miluji tě víc, než lze ti
+vědět, mé lásky dokud neznáš příčiny. A protož tedy, dobrý Capulete, – neb jméno to mi drahé jest jak
+mé, – jen utiš se. Mer. Ó klidná, bezectná a mrzká poddajnost! Alla
+stoccata tu odchází jak vítěz. (Tasí.)
+Tybalte, ty krysaři, chceš za mnou? Tyb. Co chceš ty? Mer. Nic, milý králi koček, než jeden z tvých
+devaterých životů, který si dovolím zabrat; a podle toho, jak se ke mně budeš
+chovati dále, vytluku z tebe těch osm ostatních. Vytáhneš-li už svůj meč za
+ucho z té jeho nohavice! Dělej! sic budeš mít můj za ušima, než tvůj bude
+venku. Tyb. Jsem vám k službám. (Tasí.) Rom. Dobrý Mercutio, svůj končíř schovej. Mer. Teď, pane, zkuste si to své passado. (Potýkají se.) Rom. Tas, tas, Benvolio, a sraz jim zbraň. Fi, páni! zločinného násilí již nechte. Tybalte, Mercutio! přec kníže zapověděl výslovně ty rvačky po Veronských ulicích. Dost, zadrž! – Tybalte! Mercutio! (Tybalt pod vztaženou paží Romeovou zraní Mercutia a prchá se
+svými soudruhy.) Mer. Jsem raněn. Mor na oba vaše rody! Jsem hotov. – Utekl a nemá nic? Ben. Ty’s raněn? Mer. Škrábnut, škrábnut; zrovna dost! Kde je můj panoš? Pro lékaře,
+lotře! (Odejde Panoš.) Rom. Buď dobré mysli, příteli; rána nemůže být
+veliká. Mer. Ne, tak hluboká není jako studna, ani tak široká
+jako vrata kostelní; ale jest jí dost, stačí. Ptej se po mně zítra a najdeš mne
+vážného jako hrob. Pro tento svět mi věru již napepřeno. Mor na oba vaše rody!
+U všech ďáblů, žeť pes a krysa, myš a kočka člověka na smrt poškrábou!
+Chvástal, lotr, padouch, který šermuje podle knihy počtářské! – Kýho ďábla vlezl´s
+mezi nás? Byl jsem raněn pod tvou rukou. Rom. Já chtěl to nejlepší. Mer. Benvolio, hleď pomoci mi někam do domu, sic omdlím. – Mor na oba vaše rody! pro červy pokrm ze mne udělaly! Teď mám to; právě dost. – Ty vaše
+rody! (Odejdou Mercutio a Benvolio.) Rom. Ten šlechtic, blízký krevný knížete, můj věrný
+přítel, raněn smrtelně, – a pro mne! Tybaltovou urážkou čest moje střísněna; –
+tím Tybaltem, s nímž před hodinou byl jsem spříbuzněn. Ó, drahá Julie, tvá
+spanilost mne zženštila, a ocel chrabrosti v mých prsou rozměkčila. Vrátí se Benvolio. Ben. Ó, Romeo, Romeo! statečný Mercutio jest mrtev! – jeho ušlechtilý
+duch tou zemí příliš časně zhrdaje, se povznes‘ k oblakům. Rom. Dne toho sudba z minula se prýští; a hořem dnešním začíná žal
+příští. Vrátí se Tybalt. Ben. Hle, Tybalt zuřivý se vrací zas. Rom. Živ jako vítěz; a Mercutio je zabit! – Pryč, ty smírná
+krotkosti, spěj do nebes, a hněv s planoucím
+zrakem buď nyní vůdcem mým! Teď,
+Tybalte, ti vracím toho tvého »padoucha«, jímž před chvílí jsi obmyslil mne
+ty. Mercutiova duše vznáší se jen málo nad našimi hlavami a čeká na tvou jako na družku: bud ty, neb já, neb oba půjdem za
+ním. Tyb. Ty bídný chlapče, zde byv spolčen s ním, též tam s ním půjdeš. Rom. To zde rozhodni! (Potýkají se; Tybalt padne.) Ben. Romeo, pryč, jen pryč! jsouť vzhůru měšťané, a Tybalt
+zabit. Tak strnule tu nestůj! – kníže
+k smrti tě odsoudí, když dopadnou tě
+zde. Pryč odtud, pryč! Ó prchni,
+prchni již! Rom. Jsemť bláznem osudu! Ben. Co otálíš? (Odejde Romeo.) Vystoupí Měšťané a jiní. Prv. Měšť. Kam prchnul ten, jenž tady zavraždil
+Mercutia! – vrah Tybalt kudy prch‘? Ben. Zde leží Tybalt. Prv. Měšť. (chopí se Tybalta). Vzhůru, za mnou, pane!
+tak poroučím ti jménem knížete. Vystoupí Kníže s Družinou ; Montek , Capulet ,
+jich Manželky a jiní. Kníže. Kdo strůjci půtky té, nám řekněte! Ben. Ó nech mne vypovědít Milost tvoje nešťastný průběh osudného boje: zde od Romea zabit leží ten, jímž tvůj Mercutio byl usmrcen. Hrab. Cap. Tybalt, můj synovec! syn bratra mého! Ó kníže, choti, mého příbuzného
+krev prolita! Teď, kníže, právem meče za naši
+krev, krev Monteků ať teče! Ó synovce,
+můj synovce! Kníže. Benvolio, kdo první zde krev prolil? Ben. Tybalt; Romeo Tybalta pak skolil. Romeo přátelsky mu domlouval, by uvážil, jak malicherný jest ten sporu vznik, a vaší Milosti mu připomínal hněv; leč všechno
+to, ten vlídný hlas a pohled
+pokojný a skromně přichýlená kolena hněv nezřízený zkrotit nemohly u Tybalta, jenž k míru jako
+hluch svou břitkou ocelí se rozehnal, Mercutiovi míře do prsou. Ten, rovněž prchliv tak, hrot
+smrtelný svým kříží hrotem, vzhrdou
+bojovnou smrt chladnou jednou rukou
+odráží a druhou zpět ji sílá k
+Tybaltu, jenž obratně ji k němu vrhá
+zpět. Romeo na ně mocně zavolá: »Dost, přátelé!« a »Rozejděte
+se!« a rychleji než jazyk, hbitá páž jim srazí osudné jich čepele a vpadá mezi ně; však pod rukou již Tybaltův tu potměšilý bod stih‘ život statného Mercutia; a potom dal se Tybalt na útěk. Leč hned se vrátil zas k
+Romeovi, v němž teprv nyní pomsta
+vzplanula, a jako blesk se vrhli na sebe; neb než jsem tasit moh‘, bych
+rozveď je, byl statný Tybalt zabit, a jak
+paď, Romeo prchnul. Tak to pravda
+jest; když jinak, smrt Benvoliův buď
+trest. Hrab. Cap. Je z přízně Monteků, a náklonnost jej činí klamným; není pravdiv
+dost; ten černý boj jich dvaceti byl
+sveden, všech dvacet zabilo tu život
+jeden. Teď prosím, kníže, po právu zde
+čiň: Romeem Tybalt sklán, Romeo zhyň! Kníže. Romeo jej, Mercutia sklál on; kdo za tu krev mi stojí na půhon? Mont. Romeo ne; Mercutiův byl přítel a vinou svou jen zákona byl
+mstitel, vzav život Tybaltův. Kníže. A za čin ten buď bez odkladu z města vyhoštěn. Teď vaše záští také na mne sáhlo a na mou krev paž zdivočilou
+vztáhlo. Však potrestám vás tak za čin ten
+smělý, že této ztráty mé se všem vám zželí. Chci hluch být k obranám i
+omlouvání, pláč ani prosby zlořád nezachrání; těch zanechte; Romeo, prchni hned, sic, dopaden, dnes dýchal naposled. Odneste tělo; soud buď bez průtahu; neb milost vraždí, odpouštějíc
+vrahu. (Odejdou.)
+========================================
+Metadata: {'Header 2': 'Scena 4.'}
+Content: Ulice. Vystoupí Benvolio a Mercutio. Mer. Kde, u všech čertů, ten Romeo jest? Což ani na noc domů nepřišel? Ben. Ne domů k otci; se sluhou jsem mluvil. Mer. Ta bledulová panna ledová, ta Rosalina umučí ho tak, že, věřte, přijde ještě o rozum. Ben. Dnes Tybalt, Capuletův synovec, mu poslal list do domu otcova. Mer. Toť vyzvání, –jak že tu stojím živ! Ben Však mu Romeo odpoví. Mer. Odpovědít na list může každý, kdo umí psát. Ben. Ne tak; – on odpoví pisálkovi toho listu, že,
+když strašen, není strašpytel. Mer. Ach, ubohý Romeo jest už nebožtík! proklán
+černým okem bělostné dívčiny; střelen do ucha milostnou písničkou; a sám střed
+jeho srdce rozštěpen hrotem slepého hocha lučištníka: – a on že jest muž, jenž
+postaví se Tybaltovi? Ben. Nu, – a kdo je ten Tybalt? Mer. Něco víc, než sametový kocourek, to mi věř.
+Učiněný bohatýr v čestných obřadnostech. Bije se, jako ty zpíváš z not, drží
+takt, tempo a míru; dbá ti té nejmenší pausy: – jedna, dvě a třetí máš v prsou.
+Hotový řezník na hedvábné knoflíky; soubojník, soubojník! kavalír nejmodřejší
+krve, jenž ti první i druhou příčinu k souboji vysype z rukávu. Ah, toho
+nesmrtelného passado! toho punto reverso! toho »tu máš! « Ben. Jak že? Mer. Mor na ty potřeštěné, šeplavé, ulízané panáky,
+ty moderní raziče frásí! »Při sám bůh, výborné kordisko! – Znamenitý chlapík! –
+Výborná nevěstka!« –Aj, můj ty milý praděde, není-li to žalostno, že jsme
+sužováni těmi cizáckými mouchami, těmi módními hejsky, těmi »pardonnez-moi«, kteří tak dřepí na novotách, že si neumějí pohodlně usednout na starou
+lavici? O, těch jejich »bons«, těch jejich »bons« I Vystoupí Romeo. Ben. Tu jde Romeo, tu jde Romeo! Mer. Bez mlíčí, jako sušený slaneček. Ó tělo, tělo,
+jak jsi rybou bylo učiněno! Teď je po uši v rýmech, v jakých Petrarka ploval.
+Laura byla proti jeho slečně pouhá kuchta; ano, ale měla přece jen lepšího
+milence, jenž o ní rýmoval. Dido byla běhna, Cleopatra cikánka, Helena a Hero
+děvečky a frejířky; Thisbe sic hezká modroočka, nebo tak něco, ale jinak k
+ničemu. Signor Romeo, bon jour! Tu máš francouzský pozdrav ke svým francouzským
+plundrám. Pěkný kousek jste nám to proved‘ dnes v noci. Rom. Dobré jitro vám oběma. Jaký kousek jsem vám
+proveď? Mer. Zlodějský kousek, pane, zlodějský; odkradl jste
+se; – chápeš? Rom. Odpusť, dobrý Mercutio, měl jsem na starosti
+vážnou věc, a v případu takovém, jako můj, jest volno člověku, by se se na
+zdvořilosti trochu prohřešil. Mer. To vlastně tolik, jako bys řekl, že u věci
+takové jest volno člověku se v kyčlích ohýbat. Rom. Ano, poklonami. Mer. Z míry dobrá trefa. Rom. Z míry dvorný výklad! Mer. Inu, vždyť jsem já učiněný květ dvornosti. Rom. Ano, povedený kvítek. Mer. Pravda. Rom. Vyšitý jako ty květy na mých střevících; a k
+tomu podšitý. Mer. Hezky řečeno; jen si ten vtip zachovej až do
+ošoumání svých střevíců; až se ti podešev prošlape, můžeš chodit po svém vtipu;
+jest to podešev nevyrovnatelná. Rom. O, vtipe, nevyrovnatelný – ve své koženosti! Mer. Pojď mezi nás, milý Benvolio, můj vtip dokulhává. Rom. Bičík a ostruhy naň, bičík a ostruhy! jinak při
+tom honu zvolám: Vyhráno! Mer. Ne, honí-li tvůj vtip divoké husy, jsem ovšem
+poražen; neboť v jediném tvém smyslu lítá jich více, než ve všech mých pěti.
+Řekni mi, honil Jsem kdy s tebou husičku? Rom. Nikdy, leda jen jako husák. Mer. Za ten žert tě štípnu do ucha. Rom. Ne, neštípej, ty milé housátko. Mer. Tvůj vtip jest velmi trpké pouchle; peprná to –
+omáčka. Rom. Není-li výborná k huse na sladko? Mer. Ó to je vtip jako kozí kůže; – coul široký, dá
+se roztáhnout na loket. Rom. Roztáhnu ho tedy do široka, přidám to k huse a
+budeš pak daleko široko nejpověstnějším husákem. Mer. Nuže, není-li to lépe tak, než to skomírání
+láskou? Teď jsi lidský, teď jsi Romeo, teď jsi opět to, co jsi, i povahou i
+tím, co umíš; neboť ta střeštěná láska jest jako velký blbec, jenž s vyplazeným
+jazykem pobíhá sem a tam, hledaje, kde by svou feruli schoval. Ben. Již dost, již dost! Mer. Chceš, abych přestal v nejlepším. Ben. Jinak by ta věc neměla konce. Mer. O mýlíš se; byl bych ji zkrátil, neboť jsem se
+dostal do plné hloubky toho, co jsem chtěl říci; a dále jsem se pouštět
+nehodlal. Rom. Hle, to je skvostné podívání! Vystoupí Chůva a Petr. Mer. Plachta, plachta! Ben. Dvě, dvě! – spodnička a planda. Chůva. Petře! Petr. Poroučíte? Chůva. Můj vějíř, Petře. Mer. Milý Petře, aby jí zakryl tvář, neboť její vějíř
+jest hezčí než ona. Chůva. Dej Pánbůh dobré jitro, pánové. Mer. Dej Pánbůh dobrý večer, krásná paničko. Chůva. Je už večer? Mer. Ba právě, to mi věřte; neboť ta nestydatá
+‚ručička na vašem ciferníku ukazuje již přes poledne. Chůva. Fuj na vás! jaký jste to člověk! Rom. Člověk, paničko, kterého Bůh stvořil, aby se měl
+s kým trápit. Chůva. Na mou věru, dobře řečeno; »aby se měl s kým
+trápit« – neřek‘ to tak? Pánové, nemůže mi někdo z vás povědít, kde bych našla
+mladého Romea? Rom. Já vám to mohu povědít; ale mladý Romeo bude
+starší, až ho najdete, než když jste ho hledala. Já jsem toho jména nejmladší,
+protože nebylo nikoho horšího. Chůva. Dobře jste to řekl. Mer. Jakže? ten nejhorší jest vám dobrý dost? Velmi
+dobře si vybíráte, na mou věru; a moudře, moudře. Chůva. Jste-li to vy, pane, ráda. bych si s vámi
+promluvila mezi čtyřma očima. Ben. Pozve ho někam na večeři. Mer. Svodnice, svodnice! – Lovci, pozor! Rom. Co’s navětřil? Mer. Zajíce ne, brachu; leda jen snad koroptvičku,
+brachu, v postní paštice, která je trochu zažluklá a plesnivá, než se dostala
+na mísu. (Zpívá:) Stará koroptvič k a plesnivá, stará koroptvička
+plesnivá, tak z hladu v postě
+jí se; však stará
+koroptvička plesnivá tak zrovna chutná
+nebývá, když zavání už v
+míse. Romeo, přijdeš domů? Pozveme se tam na
+oběd. Rom. Přijdu za vámi. Mer. S bohem, starožitná krasavice; mějte se dobře!
+(Zpívá:) »Krásko, krásko, krásko!« (Odejdou Mercutio a Benvolio.) Chůva. Tak, tak; s pánem bohem! – Prosím vás, pane,
+kdopak je ten kramář se šibeničním zbožím? Rom. Panic, chůvo, jenž rád se slyší mluvit, a
+nažvatlá toho za minutu více, než co by zastal za měsíc. Chůva. Jen ať si na mne přivstane, a já mu strhnu
+hřebínek i kdyby byl ještě bujnější, a dvaceti takovým Jankům; a nestačím-li na
+to já, najdu takové, které stačí. Kluk prašivá! Já nejsem žádná z jeho fiflen,
+já nejsem žádná z jeho kamarádek. (K Petrovi.) A ty tu civíš a trpíš to, aby se
+každý dareba s chutí do mne pouštěl? Petr. Neviděl jsem nikoho, kdo by se s chutí do vás
+pouštěl, sic byl bych mžikem tasil, za to vám ručím. Troufám si tak rychle
+tasit jako jiný muž, vidím-li příležitost k pořádné rvačce a právo na své
+straně. Chůva. Pánbůh ví, tak jsem se rozzlobila, že se každá
+žilka ve mně třese. – Kluk prašivá! – Prosím vás, pane, na slovíčko. Jak jsem
+povídala, moje slečinka mi poručila, abych vás našla. Co mi poručila, abych vám
+řekla, nechám si pro sebe; ale napřed dovolte, abych vám pověděla, kdybyste ji
+chtěl vyvést na věž, jak říkáváme, že by to bylo nanicovaté, jak říkáváme;
+neboť slečna je mladičká a proto, kdybyste s ní hrál obojetně, byla by to zlá
+hra s každou slečinkou vůbec, a veliká ničemnost. Rom. Vyřiď, chůvo, mé poručení své slečně a velitelce.
+Ručím ti – Chůva. I ty mé dobré srdéčko! věru, všechno jí to
+řeknu. Pane, pane, to bude radosti u toho děvčete! Rom. Co jí řekneš, chůvo? vždyť mne ani neposloucháš? Chůva. Povím jí, že ručíte; což, jak já tomu rozumím,
+jest kavalírský slib. Rom. Jen řekni, pod nějakou záminkou dnes odpoledne by šla k zpovědi; bratr Lorenzo ve své celle dá jí rozhřešení, a pak oddá nás. Zde, za tvou píli. Chůva. Ne, to věru ne; ni haléře. Rom. Jdi, jdi; to musíš vzít. Chůva. Dnes odpoledne, pane? Dobrá, přijde. Rom. Ty, chůvo, počkej za klášterní zdí; můj sluha bude za hodinu tam a provazový řebřík přinese; a po něm vyšplhám se, nocí kryt, až na nejvyšší stožár slasti své. Bud zdráva, věrna; odměním se ti. Nuž, s bohem, a svou pant
+pozdravuj. Chůva. Bůh nebeský ti žehnej! Slyšte, pane! Rom. Co chceš, má milá chůvo? Chůva. Zdali pak váš sluha věren? Znáte přísloví: »Dva smlčí to, jen jediný co ví«? Rom. Můj sluha jest jak ocel spolehliv. Chůva. Dobře, pane; moje slečna jest vám to
+nejroztomilejší děvčátko na světě. – Bože, Bože! když to byl ještě malý
+žvatlavý blázínek – O, je tu ve městě kavalír, nějaký Paris, jenž má na ni
+namířeno; ale ona, dobrá dušinka, by raději viděla ropuchu, opravdovou ropuchu,
+než jeho. Já ji tak někdy pozlobím a povídám, že ten Paris je hezčí muž; ale za
+to vám ručím, když to řeknu, zbledne vám tak, že jest jako nejbělejší plátno na
+tom širém božím světě. Nezačínají rozmarina a Romeo toutéž písmenou? Rom. Ano, chůvo; nač se ptáš? – obé písmenou R. Chůva. I vy čtveráku! to je psí písmena. »Rrr«, tak
+vrčí psi – Ne; vím, že to začíná nějakou jinou písmenou; a ona si vám na to
+složila nejkrásnější průpovídky, – o vás a rozmarině, že by vám srdce v těle
+poskočilo, kdybyste to slyšel. Rom. Vyřiď slečně mé poručení. Chůva. Toť se rozumí; – a tisíckrát. (Odejde Romeo.) Petře! Petr. Poroučíte? Chůva. Petře, vezmi můj vějíř; jdi napřed; a klusem.
+(Odejdou.)
+========================================
+Metadata: {'Header 2': 'Scena 2.'}
+Content: Zahrada Capuletova. Vystoupí Julie. Jul. V trysk, ohněnozí oři, dejte se k Phoebovu sídlu; taký vozotaj, jak Phaëton, by došlehal vás v
+západ a mžikem vyved´ oblačitou noc. Svou hustou oponu již rozestři, ó noci, oběť lásky světící, by uzamkly se oči zvědavců, a neviděn a slovem nestíhán Romeo vletěl v toto náručí Na obřad lásky září milencům jich vlastní krása; aneb
+slepá-li jest láska, nejlíp k noci druží
+se. Pojď, noci ctihodná, ty vážná
+paní, vše černě oděná, a nauč mne, jak prohravati ve hře vítězné, kde v sázce dvojí čisté
+panictví. Mou nezkrocenou krev, jež ve
+tvářích mi tepe, černým pláštěm
+zakukli, až plachá láska má se osmělí, a všechno věrné lásky konání mít bude jen za čirou
+nevinnost. Pojď, noci, pojď! Romeo, pojď,
+dne v noci! neb ležet budeš noci na
+křídlech bělejší sněhu nově padlého na týlu havrana. – Pojď, vlídná
+noci, pojď láskyplná, černobrvá noci, dej mi Romea! – i až umře kdys, jej vezmouc, rozděl v malé
+hvězdičky, a nebes tvář tak sličnou učiní, že láskou k noci vzplane
+všechen svět, skvělému slunci již se neklaně. Ó, palác lásky zakoupila jsem, leč v držení jsem ještě
+nevešla; a sama, ačkoliv jsem prodána, jsem nepřevzata. Tak je
+zdlouhavý ten den, jak děcku nedočkavému noc bývá před nějakou
+slavností, když nové šaty má a nositi jich nesmí. – Ó, zde chůva
+přichází a zprávy nese mi; a každý
+jazyk, Romeovo jen jméno vysloviv, mi zazní výmluvností nebeskou. Vystoupí Chůva s provazovým žebříkem. Nuž, chůvo, jaké zprávy? Co to
+neseš? Toť ony provazy, pro něž Romeo tě poslal? Chůva. Ano, ano, provazy. (Hodí je na zem.) Jul. Ach, jaká zvěst? – co lomíš rukama? Chůva. Ó běda nám, je mrtev, mrtev, mrtev! Jsme, slečno, ztraceny, jsme
+ztraceny. Ach, žalný den! – je pryč, je zabit,
+mrtev. Jul. Zdaž nebe může být tak závistno? Chůva. Romeo může, nebe nikoliv. Romeo, ó Romeo! – kdož by byl cos takového pomyslil? – Romeo! Jul. Jaký’s to ďábel, že mne mučíš tak? tu trýzeň strašné peklo řvát by
+mělo. Romeo sám se zabil? řekni
+»ano<; – to pouhé slůvko prudčej‘
+otráví, než baziliškův smrtonosný hled. Já nejsem já, když také »ano«
+jest, neb jsou-li ony oči zavřeny, jež přiměly tě, abys »ano«
+řekla. Když zabit, řekni »ano«; –
+»ne«, když není, ten hles se v blaho mé, neb v
+hoře změní. Chůva. Já ránu viděla, na vlastní oči ji viděla, – Bůh nám buď milostiv! – zde v jeho mužných prsou. Ubohé to mrtvé tělo, tělo krvavé, tak bledé, bledé, jako z popela, vše krví zbroceno, vše ssedlou krví
+– Já omdlela jsem při tom pohledu. Jul. Ó, pukni, ty mé srdce! – ubohé ty zchudlé srdce, pukni v jeden
+ráz! Vy oči do žaláře! abyste již nikdy nespatřily svobody. Ty nuzná hrstko země v zem se
+vrať; zde ukonči své putování bědné a klid s Romeem najdi v rakvi
+jedné! Chůva. Ó Tybalt, Tybalt, přítel nejlepší, jejž měla jsem! Ó, dobrý Tybalte, ty pane šlechetný, žeť živa jsem, bych tebe mrtva vidět musela! Jul. Jaká to bouře s opačných tak stran znov zadula? Romeo zabit jest, a Tybalt mrtev? – drahý
+bratranec a dražší manžel můj? – Nuž v
+soudný den již zazni, strašlivá ty
+polnice! neb kdo je živ, když tito dva
+jsou mrtvi? Chůva. Tybalt je mrtev, vyhnancem Romeo, Romeo, jenž ho zabil, vyhnancem! Jul. Ó bože! tedy Tybaltovu krev Romeova snad ruka prolila? Chůva. Ó tak, ó tak! – ach běda, prolila! Jul. Ó hadí srdce, květnou lící kryté! – zdaž obýval kdy drak tak luznou
+sluj? Ty krásný škůdce, ďáble
+andělský, ty s holubicím peřím krkavče! ty jehně s vlka lačnou
+dravostí, ty zvrhlá látko v božské
+podobě, jenž’s opak toho, co se právem
+zdáš, – prokletý světec, lotr
+ctihodný! Ó přírodo, co’s v pekle dělala, když’s umístila ducha ďáblova v smrtelném ráji sličného tak
+těla? Zda kniha bídného tak obsahu kdy byla vázána tak úhledně? Ó, že jen může obývati klam tak skvělý palác! Chůva. Není věrnosti, ni pravdy, poctivosti u mužů; vše falešno, vše křivopřísežno, vše ničemno, vše jeden pokrytec. Ah, kde můj sluha? – krapet rosolky! Ten žal, ten zármutek, ty trampoty, ó těmi stárnu. – Hanba ti, Romeo! Jul. Za přání to ti jazyk oprýskej! On k hanbě nezrozen; na jeho
+čelo by hanba hanbila se usednout: jeť trůn, kde možno korunovat
+čest za veškerého světa vládkyni. Jak zlá jsem byla, tak mu
+zlořečíc! Chůva. Snad chcete dobře mluvit o někom, jenž zabil vám vašeho bratrance? Jul. Mám zle snad mluvit o svém manželu? Ach, nebohý můj choti, který
+jazyk má jméno tvoje polaskat, když
+já, tvá od tří hodin choť, je
+zdrásala? Zlý muži, proč’s mi zabil
+bratrance? Zlý bratranec by byl mi zabil
+muže. Zpět, slzy bláhové, v svůj
+rodný zdroj; jsteť svojí rosou bolu
+poplatný, a mýlkou platíte jí radostí. Můj choť jest živ, jejž Tybalt
+byl by zabil, a mrtev Tybalt, jenž chtěl
+zabit jej: v tom všem jest útěcha, proč
+pláču tedy? Ach, zaznělo tu slovo hroznější než Tybaltova smrt; – to vraždí
+mne. Tak ráda bych naň zapomenula, však, běda, ono tíží paměť mou, jak hříšnou duši vina prokletá. »Tybalt je mrtev, – a Romeo
+vyhnán.« To »vyhnán«, jediné to slovo
+»vyhnán« v mžik sklálo deset tisíc
+Tybaltů. Smrt Tybaltova byla žalna dost, když bývalo by s ní to
+skončilo; neb má-li trpký bol rád
+společnost a s. jiným žalem družiti se
+musí, proč, když mi řekla: »Tybalt
+mrtev jest,« hned nenásledovalo: »Otec tvůj, neb matka,« aneb »oba mrtvi
+jsou,« což vzbudilo by nářek obvyklý? Leč Tybaltově smrti v zápětí »Romeo vyhnán« říci, znamená, že otec, matka, Tybalt i Romeo i Julie jsou mrtvi, ubiti. – »Romeo vyhnán,« – vražednost
+těch slov dna, konce nemá, míry, meze
+žádné; a žádné slovo bol ten
+neovládne. – Kde jest můj otec, chůvo, s
+matkou mou? Chůva. Nad Tybaltovou kvílí mrtvolou. Či chcete k nim? Já dovedu vás tam. Jul. Jich slzy ať mu omývají rány; mé pro vyhnance budou
+vyplakány, až vyschnou jejich. – Zvedni
+provaz ten. Ty, ubohý, jak já byl’s
+oloupen, neboť Romeo vyhnancem je teď. Ty’s měl ho k mému lůžku nésti,
+– hleď, a já co dívčí vdova umírám. Pojď, chůvo, sama již se ubírám na lože svatební; – tam smrt si
+jistě můj vínek vezme na Romea místě. Chůva. Jen honem teď do vaší komnaty; najdu Romea, by vás potěšil, neb dobře vím, kde mešká. Poslyšte, dnes večer váš Romeo přijde k vám; jdu pro něho; jest u Lorenza skryt. Jul. Ó, najdi ho! – ten prsten dej mu tam, ať rozloučit se přijde
+naposled. (Odejdou.)
+========================================
+Metadata: {'Header 1': 'JEDNÁNÍ DRUHÉ.'}
+Content: PROSLOV. Vystoupí Chorus. Chor. Teď stará tužba zmírá; po ní hlásí se o dědictví mladé zanícení; ta, po níž láska k smrti
+vzdychala si, teď podle Julie již krásnou není. Jest milován Romeo milující; je oba poutá hledů kouzlo steré; on vzdychá k domnělé své
+protivnici, jež krmi lásky s hrůzných udic
+bere. Jmín škůdcem, nesmí u ní
+vysloviti své přísahy, jak milencův to
+zvykem; a ta, jež rovněž tolik lásky
+cítí, jej spatřit nesmí ani okamžikem. Však vroucnost sílu, čas jim
+volnost skýtá, a protivenství v sladké blaho
+zkvítá. (Odejde.)
+========================================
+Metadata: {'Header 2': 'Scena 5.'}
+Content: Sál v domě Capuletově. Hudebníci čekají. – Vystoupí Sloužící s ubrousky. Prv. Slouž. Kde je Pánvička, že nepomáhá odnášet? On,
+dát jinou mísu! – On, tak spíše mísu vyškrábat! Druhý Slouž. Leží-li způsobná obsluha v rukou jednoho
+neb dvou lidí, a k tomu nemytých, je to nečistá správa. Prv. Slouž. Pryč s těmi křesly, odstavte kredenc,
+pozor na stříbro! Ty, milý brachu, schovej mi kousek marcipánu a máš-li mne
+rád, řekni vrátnému, aby sem pustil Zuzanku Brouskovu a Lenorku. Antoníne! –
+Pánvičko! Vystoupí jiní
+Sloužící. Třetí a čtvrtý Slouž. Tady, chlapče! První Slouž. Shánějí se po vás, volají vás, ptají se
+po vás a hledají vás ve velké síni. Třetí Slouž. Nemůžeme býti najednou zde i tam.
+Vesele, hoši! zatočte se; a kdo déle živ, sebere všechno. (Všichni ustoupí do
+pozadí.) Vystoupí Capulet s Julií a jinými svého domu
+vítaje Hosty a Masky. Cap. Nuž, vítejte mi, páni! – naše dámy, jichž prsty kuří oka netrápí, si s vámi zatočí. Aha, panenky! kde která z vás, jež tanec
+odepře? Ta, jež se upejpá, chci
+přísahat, že kuří oka má. Což, trefil
+jsem? Nuž, páni, vítejte! – Ó býval
+čas, kdy masku nosil jsem a dovedl věc krásné dámě v ucho
+pošeptat, jež se jí líbila. – To tam! to
+tam! Jste, páni, vítáni! – Nuž,
+hudebníci, teď spusťte. – Místo, místo! –
+ustupte! a mrštně na nožky, mé dívčiny! (Hudba hraje a tančí
+se.) Víc světla, hoši! stoly
+odstavte a shaste oheň, příliš horko
+zde. – Ah, brachu, maškarní to veselí tak nenadálé, srdce rozhřeje. Jen seďte, seďte, strýce
+Capulete; – dny tance pro nás dva již
+minuly. Jak dávno tomu již, co vy a já jsme naposledy v maskách
+vězeli? Druhý Cap. Při svaté Panně, třicet tomu let. Cap. Co, – muži! tolik ne, ba tolik ne; vždyť máme od svatby Lucentia kol příštích letnic pětadvacet
+let; a tenkráte jsme v maskách
+tančili. Druhý Cap. To víc, to víc; jeť starším jeho syn; jest
+třicátník. Cap. To povídáte mně? Před dvěma roky nezletilý byl. Rom. (k Slouž). Kdo jest ta dáma, která bohatou tam
+činí ruku toho rytíře? Slouž. To nevím, pane. Rom. Ó, učí pochodně jich záři skvělé! Tak zdá se viset s tváře noci
+stmělé, jak v uchu Ethiopa klenot
+stkvoucí; vděk příliš vzácný pro zem, touhu
+žhoucí! Jak v hejnu kavek holubice
+sněžná, jest mezi družkami ta dívka
+něžná. Až dotančí, k ní přistoupím v tom
+shluku a tknutím její posvětím svou
+ruku. Že miloval jsem dosud? Jak se
+klamu! dnes vidím teprv pravou krásu
+samu. Tyb. Toť podle hlasu jeden z Monteků. – Můj končíř, hochu! – Jak se
+odváží ten otrok přijít sem kryt
+larvou blázna, by potupně se šklebil na náš
+kvas? Při šlechtictví a cti všech
+krevných mých, jej tady rázem skolit není
+hřích. Cap. Proč bouříte tak, strýčku? co jste měl? Tyb. Tam, ujce, Montek jest, náš nepřítel; toť padouch, jenž se na vzdor
+vetřel sem, by potupil nám slavnost
+pošklebkem. Cap. Mladý Romeo? Tyb. Padoušský Romeo! Cap. Buď kliden, milý strýčku, nech ho být, on jako pravý šlechtic chová
+se; i abych pravdu řekl, po Veroně se chválí jako ctný a řádný
+jun. Za všechny toho města poklady bych v domě svém jej nechtěl
+urazit. Buď tedy trpěliv a nedbej naň; toť vůle má, a máš-li úctu k
+ní, buď přívětiv a chmury s čela
+pryč! ten výstroj k slavnosti se
+nehodí. Tyb. Ba hodí, když je hostem taký chlap. Já nestrpím ho. Cap. Musí strpěn být! Jak, – hošku! – Muší, povídám.
+– Jen dál. – Jsem já zde pánem, nebo ty? –
+jen dál. Ty nestrpíš ho! – Bůh mou duši
+spas. – Chceš mezi mými hosty dělat
+svár, chceš hrát si na kohouta? –
+hleďme, ty! Tyb. Vždyť jest to hanba, ujce. Cap. Dál, jen dál. – Vy všetečný jste hoch! – je
+tomu tak? Ta hra vás ještě spálí; – vím,
+co vím. Mně protivit se! – věru, jest
+již čas – Tak, hezky, srdečka! – Ty’s
+drzý; – jdi. Mlč, sic – Víc světla! světla!
+– Ty se styď! Však ztichneš! – Vesele, má
+srdečka! Tyb. Mé celé nitro chví se, hněv jak žhavý a vynucená mírnost v něm se zdraví. Jdu; – však to smělé sem se
+vetření teď sládnouc, v hořkou žluč se
+promění. (Odejde.) Rom. (k Julii) Když znesvětím ten oltář zářící snad rukou smělou, mírný jest
+hřích její: mé rty, dva uzardělí poutníci, to drsné tknutí něžně slíbat
+chtějí. Jul. Poutnice milý, křivdíš velice té ruce své; v tomť pravá
+zbožnost její: když poutník tkne se ruky
+světice, tak ruka s rukou líbati se
+smějí. Rom. Či svatá nemá rtů a poutník též? Jul. Jich užit jenom k modlitbě si troufá. Rom. Ó svatá, rty co ruce učiňtež; rty prosí, vyslyš je, sic víra
+zoufá. Jul. I prosbu plně, světec tich jest věru. Rom. Tož ticha buď, když, oč jsem prosil, beru; tak tvými rty má vina s mých je
+sjata. (Políbí
+ji.) Jul. Toť na mých rtech jest jimi sjatý hřích. Rom. Hřích se rtů mých? – O vina sladce vzatá! Můj hřích mi vrať. Jul. Vy líbáte jak z knih. Chůva. Matinka, slečno, na slůvko vás volá. Rom. Kdo její matka? Chůva. Aj, můj panáčku, máť její paní toho domu jest, a dobrá paní, moudrá, ctihodná; já dcerku, s níž jste mluvil,
+kojila, a povídám vám, kdo ji dostane, ten uslyší, jak zlato zacinká. Rom. Jest Capuletova? O krutá zpráva! můj život nepříteli v dluh se
+dává. Ben. Již pojďme; veselost je na vrcholu. Rom. Ach žel, tím větší neklid mého bolu. Cap. Ne, páni, k odchodu se nemějte; jest ještě malá, skromná
+večeře. Že přec? – Nuž tedy, děkuji vám
+všem; dík, vzácní pánové, a dobrou
+noc. Víc pochodní! – Nuž, půjdem na
+lože. Ach, brachu, na mou věru, pozdí
+se; jdu spat. (Odcházejí všichni až
+na Julii a Chůvu.) Jul. Slyš, chůvo, kdo jest onen pán? Chůva. To syn a dědic starého Tiberia. Jul. Kdo ten, jenž vychází teď ze dveří? Chůva. Mladý Petruchio, nemýlím-li se. Jul. Kdo ten, jenž za ním jde a nechtěl tančit? Chůva. To nevím, slečno. Jul. Jdi a zeptej se na jeho jméno. (Stranou.) Ženat-li,
+ó vím, že bude hrob mým lůžkem
+svatebním! Chůva (vrátí se k Julii). Jest to Romeo, z domu Monteků, syn jediný vašeho praodpůrce. Jul. Má láska jediná, ze zapřísáhlé mé zášti jediné tak vzniklá
+náhle! Tak příliš záhy spatřen, neznán
+dříve, a příliš pozdě poznán! – Ó ty
+dive, jenž’s lásku ve mně zrodil v
+okamžiku k tak nenáviděnému protivníku! Chůva. Co to? Co to? Jul. Verš, jemuž naučil mne jeden tanečník. (Volá se za scénou: »Julie!«) Chůva. Hned, v okamžení! Nuž pojďme, nikdo z cizích už tu
+není. (Odejdou.)
+========================================
+Generated Response:
+Tybalt je synovec Capuletů, tedy příbuzný Julie, a je známý svou horkokrevností a sklonem k vyvolávání konfliktů. V příběhu "Romeo a Julie" je Tybalt jedním z hlavních antagonistů, který se dostává do konfliktu s Romeem a Mercutio, což vede k tragickým událostem.
