@@ -1,5 +1,5 @@
 # Prirucka 2024
-[![Pages build deployment](https://github.com/hermajan/prirucka2024/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hermajan/prirucka2024/actions/workflows/pages/pages-build-deployment)
+[![Pages build deployment](https://github.com/PetrZikan/prirucka2024/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/PetrZikan/prirucka2024/actions/workflows/pages/pages-build-deployment)
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
