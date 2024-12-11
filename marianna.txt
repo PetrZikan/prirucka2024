@@ -1,0 +1,139 @@
+(env) marianna@lenovo-ubuntu:~/prirucka2024/myhtml$ prirucka2024 download-url https://astro-gdt.readthedocs.io/projects/astro-gdt-fermi/en/latest/missions/fermi/gbm/phaii.html myhtml.html
+HTML content saved to myhtml.html
+(env) marianna@lenovo-ubuntu:~/prirucka2024/myhtml$ prirucka2024 split-html-on-headers myhtml.html --output-pkl myhtml.pkl --output-txt myhtml.txt
+INFO:prirucka2024.split_html_on_headers:No specific target specified; processing full HTML content.
+INFO:prirucka2024.split_html_on_headers:Dropping split with empty metadata: gdt-fermi:docs  
+Index Modules  
+Navigation
+INFO:prirucka2024.split_html_on_headers:Dropping split with empty metadata: Fermi GBM PHAII Data (gdt.missions.fermi.gbm.phaii)¶ Reference/API¶ gdt.missions.fermi.gbm.phaii Module¶ Classes¶ Class Inheritance Diagram¶
+INFO:prirucka2024.split_html_on_headers:Dropping split with empty metadata: Page Contents
+INFO:prirucka2024.split_html_on_headers:Dropping split with empty metadata: Page Source   Back to Top  
+© Copyright . Created using Sphinx 5.0.2.  
+INFO:prirucka2024.split_html_on_headers:Serialized splits saved to myhtml.pkl
+INFO:prirucka2024.split_html_on_headers:Split contents saved to myhtml.txt
+INFO:prirucka2024.split_html_on_headers:Number of header splits: 5
+(env) marianna@lenovo-ubuntu:~/prirucka2024/myhtml$ prirucka2024 fill-vector-store myhtml.pkl chroma_dir
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+(env) marianna@lenovo-ubuntu:~/prirucka2024/myhtml$ prirucka2024 rag --chroma-db-dir chroma_dir/ "How can I use the GbmPhaii function?"
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:prirucka2024.rag:Retrieved 5 documents.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Retrieved Documents:
+Metadata: {'Header 3': 'Navigation'}
+Content: next » « previous | The Gamma-ray Data Tools 2.1.3 documentation » Fermi GBM PHAII Data (gdt.missions.fermi.gbm.phaii)
+========================================
+Metadata: {'Header 1': 'Fermi GBM PHAII Data (gdt.missions.fermi.gbm.phaii)¶', 'Header 2': 'Reference/API¶', 'Header 3': 'gdt.missions.fermi.gbm.phaii Module¶'}
+Content: GbmPhaii()  
+PHAII class for GBM time history spectra.  
+Ctime()  
+Class for GBM CTIME data.  
+Cspec()  
+Class for GBM CSPEC data.
+========================================
+Metadata: {'Header 3': 'Page Contents'}
+Content: Fermi GBM PHAII Data (gdt.missions.fermi.gbm.phaii)  
+Reference/API  
+gdt.missions.fermi.gbm.phaii Module  
+Classes Class Inheritance Diagram  
+Previous topic  
+TteTriggerHeaders  
+Next topic  
+GbmPhaii  
+This Page
+========================================
+Metadata: {'Header 1': 'Fermi GBM PHAII Data (gdt.missions.fermi.gbm.phaii)¶'}
+Content: The primary science data produced by GBM can be summarized as a time history of spectra, which is provided temporally pre-binned (CTIME and CSPEC) or temporally unbinned (TTE). These data types are produced as “snippets” for every single trigger and are also provided continuously. CTIME and CSPEC are provided in daily chunks, and TTE are provided in hourly chunks (since late 2012). One of the most common things that a user of GBM data wants to do is look at this data (what we call a lightcurve) for one or more detectors over some energy range.  
+The CTIME and CSPEC data are temporally pre-binned data, which have 8 and 128 energy channels respectively. These data files can be read by the GbmPhaii class (or the aliased Ctime and Cspec classes).  
+>>> from gdt.core import data_path >>> from gdt.missions.fermi.gbm.phaii import GbmPhaii >>> # read a ctime file >>> filepath = data_path.joinpath('fermi-gbm/glg_ctime_nb_bn120415958_v00.pha') >>> ctime = GbmPhaii.open(filepath) >>> ctime <Ctime: glg_ctime_nb_bn120415958_v00.pha; trigger time: 356223561.133346; time range (-899.3424419760704, 1000.8578699827194); energy range (4.323754, 2000.0)>  
+Since GBM uses the FITS format, the data files have multiple data extensions, each with metadata information in a header. There is also a primary header that contains metadata relevant to the overall file. You can access this metadata information:  
+>>> ctime.headers.keys() ['PRIMARY', 'EBOUNDS', 'SPECTRUM', 'GTI']  
+>>> ctime.headers['PRIMARY'] CREATOR = 'GBM_SCI_Reader.pl v1.19' / Software and version creating file FILETYPE= 'PHAII ' / Name for this type of FITS file FILE-VER= '1.0.0 ' / Version of the format for this filetype TELESCOP= 'GLAST ' / Name of mission/satellite INSTRUME= 'GBM ' / Specific instrument used for observation DETNAM = 'NAI_11 ' / Individual detector name OBSERVER= 'Meegan ' / GLAST Burst Monitor P.I. ORIGIN = 'GIOC ' / Name of organization making file DATE = '2012-04-16T02:15:21' / file creation date (YYYY-MM-DDThh:mm:ss UT) DATE-OBS= '2012-04-15 22:45:25.975' / Date of start of observation DATE-END= '2012-04-15 23:17:06.175' / Date of end of observation TIMESYS = 'TT ' / Time system used in time keywords TIMEUNIT= 's ' / Time since MJDREF, used in TSTART and TSTOP MJDREFI = 51910 / MJD of GLAST reference epoch, integer part MJDREFF = '0.0007428703703703703' / MJD of GLAST reference epoch, fractional par TSTART = 356222661.790904 / [GLAST MET] Observation start time TSTOP = 356224561.991216 / [GLAST MET] Observation stop time FILENAME= 'glg_ctime_nb_bn120415958_v00.pha' / Name of this file DATATYPE= 'CTIME ' / GBM datatype used for this file TRIGTIME= 356223561.133346 / Trigger time relative to MJDREF, double precisi OBJECT = 'GRB120415958' / Burst name in standard format, yymmddfff RADECSYS= 'FK5 ' / Stellar reference frame EQUINOX = 2000.0 / Equinox for RA and Dec RA_OBJ = 30.0 / Calculated RA of burst DEC_OBJ = -15.0 / Calculated Dec of burst ERR_RAD = 3.0 / Calculated Location Error Radius  
+There is easy access for certain important properties of the data:  
+>>> # the good time intervals for the data >>> ctime.gti <Gti: 1 intervals; range (-899.3424419760704, 1000.8578699827194)>  
+>>> # the trigger time >>> ctime.trigtime 356223561.133346  
+>>> # the time range >>> ctime.time_range (-899.3424419760704, 1000.8578699827194)  
+>>> # the energy range >>> ctime.energy_range (4.323754, 2000.0)  
+>>> # number of energy channels >>> ctime.num_chans 8  
+We can retrieve the time history spectra data contained within the file, which is a TimeEnergyBins class (see 2D Binned Data for more details).  
+>>> ctime.data <TimeEnergyBins: 14433 time bins; time range (-899.3424419760704, 1000.8578699827194); 1 time segments; 8 energy bins; energy range (4.323754, 2000.0); 1 energy segments>  
+Through the Phaii base class, there are a lot of high level functions available to us, such as slicing the data in time or energy:  
+>>> time_sliced_ctime = ctime.slice_time((-10.0, 10.0)) >>> time_sliced_ctime <Ctime: trigger time: 356223561.133346; time range (-10.240202009677887, 10.048128008842468); energy range (4.323754, 2000.0)>  
+>>> energy_sliced_ctime = ctime.slice_energy((50.0, 500.0)) >>> energy_sliced_ctime <Ctime: trigger time: 356223561.133346; time range (-899.3424419760704, 1000.8578699827194); energy range (49.60019, 538.1436)>  
+As mentioned, this data is 2-dimensional, so what do we do if we want a lightcurve covering a particular energy range? We integrate (sum) over energy, and we can easily do this:  
+>>> lightcurve = ctime.to_lightcurve(energy_range=(50.0, 500.0)) >>> lightcurve <TimeBins: 14433 bins; range (-899.3424419760704, 1000.8578699827194); 1 contiguous segments>  
+Similarly, we can integrate over time to produce a count spectrum:  
+>>> spectrum = ctime.to_spectrum(time_range=(-10.0, 10.0)) >>> spectrum <EnergyBins: 8 bins; range (4.323754, 2000.0); 1 contiguous segments>  
+The resulting objects are TimeBins and EnergyBins, respectively, and see 1D Binned Data for more details on how to use them.  
+Of course, once we have produced a lightcurve or spectrum data object, often we want to plot it. For that, we use the Lightcurve and Spectrum plotting classes:  
+>>> import matplotlib.pyplot as plt >>> from gdt.core.plot.lightcurve import Lightcurve >>> lcplot = Lightcurve(data=lightcurve) >>> plt.show()  
+This plot may look odd without context. Since we are reading a trigger CTIME file, the file contains multiple time resolutions. Normally the CTIME data is accumulated in 256 ms duration bins, but starting at trigger time, the data switches to 64 ms duration bins for several hundred seconds, and then it goes back to 256 ms bins.  
+So maybe the native CTIME resolution is overkill because it’s hard to see the signal. We can make it easier to see the signal if we bin it up (see The Binning Package for details):  
+>>> from gdt.core.binning.binned import rebin_by_time >>> # rebin the data to 2.048 s resolution >>> rebinned_ctime = ctime.rebin_time(rebin_by_time, 2.048) >>> lcplot = Lightcurve(data=rebinned_ctime.to_lightcurve()) >>> # zoom in >>> lcplot.xlim = (-250.0, 250.0) >>> lcplot.ylim = (1000.0, 1500.0)  
+After rebinning the data and zooming in a little, we can now easily see the GRB signal in the lightcurve.  
+Similarly, we can plot the count spectrum:  
+>>> from gdt.core.plot.spectrum import Spectrum >>> specplot = Spectrum(data=spectrum) >>> plt.show()  
+See Plotting Lightcurves and Plotting Count Spectra for more on how to modify these plots.  
+Finally, we can write out a new fully-qualified PHAII FITS file after some reduction tasks. For example, we can write out our time-sliced data object:  
+>>> time_sliced_ctime.write('./', filename='my_first_custom_ctime.pha')  
+For more details about working with PHAII data, see PHAII Files.
+========================================
+Metadata: {'Header 3': 'This Page'}
+Content: Show Source
+========================================
+Generated Response:
+To use the GbmPhaii function, you first need to import the necessary modules and read a CTIME file. Here is a basic example of how to do it:
+
+1. Import the required modules:
+   ```python
+   from gdt.core import data_path
+   from gdt.missions.fermi.gbm.phaii import GbmPhaii
+   ```
+
+2. Read a CTIME file:
+   ```python
+   filepath = data_path.joinpath('fermi-gbm/glg_ctime_nb_bn120415958_v00.pha')
+   ctime = GbmPhaii.open(filepath)
+   ```
+
+3. Access metadata and properties:
+   ```python
+   print(ctime.headers.keys())  # Access the keys of the headers
+   print(ctime.gti)  # Get the good time intervals
+   print(ctime.trigtime)  # Get the trigger time
+   print(ctime.time_range)  # Get the time range
+   print(ctime.energy_range)  # Get the energy range
+   print(ctime.num_chans)  # Get the number of energy channels
+   ```
+
+4. To slice data in time or energy:
+   ```python
+   time_sliced_ctime = ctime.slice_time((-10.0, 10.0))
+   energy_sliced_ctime = ctime.slice_energy((50.0, 500.0))
+   ```
+
+5. To produce a lightcurve or spectrum:
+   ```python
+   lightcurve = ctime.to_lightcurve(energy_range=(50.0, 500.0))
+   spectrum = ctime.to_spectrum(time_range=(-10.0, 10.0))
+   ```
+
+6. You can also plot the lightcurve or spectrum using appropriate plotting classes:
+   ```python
+   import matplotlib.pyplot as plt
+   from gdt.core.plot.lightcurve import Lightcurve
+   lcplot = Lightcurve(data=lightcurve)
+   plt.show()
+
+   from gdt.core.plot.spectrum import Spectrum
+   specplot = Spectrum(data=spectrum)
+   plt.show()
+   ```
+
+7. Finally, you can write the processed data back to a new PHAII FITS file:
+   ```python
+   time_sliced_ctime.write('./', filename='my_first_custom_ctime.pha')
+   ```
+
+This should give you a good starting point for using the GbmPhaii function.
