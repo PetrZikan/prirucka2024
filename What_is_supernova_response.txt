@@ -1,0 +1,32 @@
+py -m prirucka2024 rag --chroma-db-dir supernova_explosions_chapter1_chatbot_chroma/ "What is the supernova?"
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:prirucka2024.rag:Retrieved 5 documents.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Retrieved Documents:
+Metadata: {}
+Content: Chapter 1
+Overview
+1.1 Introduction
+Why study supernovae? At a basic level, one’s attention is captured by anything new
+========================================
+Metadata: {}
+Content: supernova, and its aftermath will be observed far into the future, perhaps as long
+as there are astronomers on Earth.
+========================================
+Metadata: {}
+Content: Supernovae have far-reaching consequences for astrophysics and cosmology. The
+ejected matter is enriched in heavy elements (in astronomy, “heavy” means carbon
+========================================
+Metadata: {}
+Content: detail.
+1.2 Discovery
+The transient nature of supernovae makes them difﬁcult to study. No speciﬁc
+progenitor star or host galaxy can be yet anticipated, and because of their great dis-
+========================================
+Metadata: {}
+Content: The nature of the progenitors of superluminous supernovae is not yet known.
+Advancing our understanding of supernovae relies primarily on interpretation
+========================================
+Generated Response:
+A supernova is an astronomical event that occurs during the last stages of a star's life, resulting in a massive explosion that outshines entire galaxies for a short period. It is significant for astrophysics and cosmology, as it ejects matter enriched in heavy elements, which contributes to the chemical evolution of the universe. The transient nature of supernovae makes them challenging to study, and their progenitor stars or host galaxies can often be unpredictable.
