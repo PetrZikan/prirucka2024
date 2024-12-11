@@ -1,0 +1,54 @@
+POSTUP:
+Pouzil som prirucka2024 na konverziu textu mojej bakalarky (pdfko) na textak.
+
+
+
+POKUS 1.
+Splittol som textak na chunky default velkosti.
+
+Natrepal som do chromy a pouzil RAG na ziskanie odpovede na dotaz "Describe new implementation, containing xOpat's vislib's rendering capabilities, that should replace the original OSD WebGL renderer".
+
+Generated Response:
+The new implementation involves a direct integration of the xOpat's vislib's WebGL renderer into the OpenSeadragon (OSD) framework. This new renderer is based on an existing WebGL renderer used in OpenSeadragon, and it aims to enhance the visualization capabilities of the xOpat viewer. However, it is noted that while this new renderer provides enhanced functionality, it also introduces increased overhead, which results in the xOpat visualization library being slower compared to using the original OSD renderer alone.
+
+Vysledok:
+Malicko dava zmysel ale nie je to vobec idealne ako by som chcel.
+
+
+
+POKUS 2.
+Splittol som textak na chunky velkosti 1000.
+Dotaz bol ten isty.
+
+Generated Response:
+The new implementation aims to integrate the rendering logic and functionalities of the xOpat visualization library (referred to as vislib) directly into the OpenSeadragon (OSD) renderer. This integration is intended to enhance the original OSD renderer by incorporating the advanced image processing capabilities of the vislib, which includes a custom WebGL renderer. 
+
+The vislib operates as a module within the xOpat WSI viewer and retrieves JSON data from the server that specifies rendering settings for the image data. It also processes image data using off-screen techniques to apply various image-processing operations. By merging these functionalities into the OSD, the new version will provide a more powerful and versatile rendering capability while addressing the limitations of the original OSD renderer. This implementation is described as a core task of the thesis, indicating a significant upgrade in functionality for users who require advanced image processing in WSI viewer software.
+
+Vysledok:
+Uz to viac davalo zmysel, ale fakt sa mi nepacila veta "This implementation is described as a core task of the thesis".
+
+
+POKUS 3.
+Ani neviem co ine som spravil, mozno novsia verzia originalneho textu :D
+
+Generated Response:
+The new implementation described aims to integrate xOpat's visualization library (vislib) rendering capabilities directly into the OpenSeadragon (OSD) library, effectively replacing the original OSD WebGL renderer. This integration seeks to overcome the limitations of the original renderer, which was confined to identity rendering, by providing a more powerful and versatile rendering solution.
+
+The implementation retains all functionalities of the original OSD WebGL renderer while introducing many additional features from the vislib, enhancing customization options for the rendering pipeline. The vislib operates as a module within the xOpat viewer and includes a newly developed rendering pipeline with a custom WebGL renderer.
+
+The new renderer is intended to allow for more extensive customization and improved performance, despite the added overhead that the custom renderer may introduce. This integration is considered essential for the WSI viewer software, as it combines the strengths of both the OSD and the vislib to meet the viewer's requirements for handling image data rendering effectively.
+
+Vysledok:
+Este lepsie, uz tam nie je ani veta co tam nema co robit, len logicky to este nie je prepojene na 100%.
+
+
+POKUS 4.
+Dotaz = "Describe possible future extensions of the new implementation of the OSD's WebGL renderer."
+
+Generated Response:
+The retrieved context mentions that a manual implementation of WebGL-based text rendering is proposed as a potential future extension of the new renderer. However, specific details about other possible future extensions are not provided. Therefore, I don't know if there are additional future extensions beyond the mentioned text rendering.
+
+Vysledok: slaba odpoved
+
+

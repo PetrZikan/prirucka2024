@@ -3,3 +3,4 @@
 09_RAG_CLI/dist/
 __pycache__
 chroma_db/
+09_RAG_CLI/myenv
