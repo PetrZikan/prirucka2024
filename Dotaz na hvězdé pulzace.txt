@@ -1,0 +1,8 @@
+PS C:\Users\vch81\Desktop\github\prirucka2024-1\09_RAG_CLI> prirucka2024 rag --chroma-db-dir langchain_docs_build_a_chatbot_chroma/ "Z čeho se skládají hvězdy?"                                                
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:prirucka2024.rag:Retrieved 0 documents.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Retrieved Documents:
+Generated Response:
+Hvězdy se skládají hlavně z plynu, především vodíku a hélia. V jejich nitru probíhají jaderné fúzní reakce, které produkují energii a světlo.
