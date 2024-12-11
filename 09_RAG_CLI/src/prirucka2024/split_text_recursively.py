@@ -10,7 +10,7 @@ def split_text_recursively(infile, outfile, chunk_size=200, chunk_overlap=50):
         infile (str): The file path to the text file to split.
         outfile (str): The file path to save the split text content to.
     """
-    with open(infile) as f:
+    with open(infile, encoding="utf-8") as f:
         content = f.read()
 
     text_splitter = RecursiveCharacterTextSplitter(

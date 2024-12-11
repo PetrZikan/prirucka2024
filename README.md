@@ -1,10 +1,12 @@
+# Prirucka 2024
+[![Pages build deployment](https://github.com/PetrZikan/prirucka2024/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/PetrZikan/prirucka2024/actions/workflows/pages/pages-build-deployment)
+
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Ucastnici](#ucastnici)
 - [Lekce 03: Whisper](#lekce-03-whisper)
 
 ## Ucastnici
-
 1. Petr Zikan
 2. Filip Holoubek
 3. Jan Hermann
@@ -25,3 +27,12 @@
 
 ## Lekce 03: Whisper
 {% include_relative 03_whisper/README.md %}
+
+## Lekce 04: Open AI client
+<https://platform.openai.com/docs/quickstart?language-preference=python>
+
+## Lekce 05: Embeddings
+<https://platform.openai.com/docs/api-reference/embeddings>
+
+## Lekce 06: Chroma
+<https://github.com/chroma-core/chroma>
