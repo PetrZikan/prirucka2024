@@ -19,7 +19,6 @@ langchain-chroma = "^0.1.4"
 langchain-openai = "^0.2.11"
 pypdf = "^5.1.0"
 langchain-community = "^0.3.8"
-langchain-unstructured = "^0.1.6"
 
 [tool.poetry.scripts]
 prirucka2024 = "prirucka2024.__main__:main"
